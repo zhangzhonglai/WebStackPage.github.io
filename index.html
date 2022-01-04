@@ -1,79 +1,594 @@
 <!DOCTYPE html>
 <html lang="zh">
-
-<head>
-    <link rel="shortcut icon" href="./assets/images/favicon.png">
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    
-    <script>
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?c05bb16ea908292af9f6c513087a1cc3";
-      var s = document.getElementsByTagName("script")[0]; 
-      s.parentNode.insertBefore(hm, s);
-    })();
-    </script>
-    <script>
-    (adsbygoogle = window.adsbygoogle || []).push({
-        google_ad_client: "ca-pub-8550836177608334",
-        enable_page_level_ads: true
-    });
-    </script>
-    <meta charset="UTF-8">
-    <title>WebStack.cc - 设计师网址导航</title>
-    <script>
-    if (navigator.appName == "Netscape") {
-        var language = navigator.language;
-    } else {
-        var language = navigator.browserLanguage;
-
-    }
-
-    if (language.indexOf("en") > -1) {
-        document.location.href = "en/index.html";
-    } else if (language.indexOf("zh") > -1) {
-        document.location.href = "cn/index.html";
-    } else {
-        document.location.href = "en/index.html";
-
-    }
-    </script>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="viggo" />
-    <title>WebStack.cc - Collection of resources and tools for Designers</title>
-    <meta name="keywords" content="UI设计,UI设计素材,设计导航,网址导航,设计资源,创意导航,创意网站导航,设计师网址大全,设计素材大全,设计师导航,UI设计资源,优秀UI设计欣赏,设计师导航,设计师网址大全,设计师网址导航,产品经理网址导航,UX师网址导航,www.webstack.cc">
-    <meta name="description" content="WebStack - 收集国内外优秀设计网站、UI设计资源网站、灵感创意网站、Resources网站，定时更新分享优质产品设计书签。www.webstack.cc">
-    
-    <!-- / FB Open Graph -->
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="http://www.webstack.cc/">
-    <meta property="og:title" content="WebStack - 收集国内外优秀设计网站、UI设计资源网站、灵感创意网站、Resources网站，定时更新分享优质产品设计书签。www.webstack.cc">
-    <meta property="og:description" content="UI设计,UI设计素材,设计导航,网址导航,设计资源,创意导航,创意网站导航,设计师网址大全,设计素材大全,设计师导航,UI设计资源,优秀UI设计欣赏,设计师导航,设计师网址大全,设计师网址导航,产品经理网址导航,UX师网址导航,www.webstack.cc">
-    <meta property="og:image" content="http://www.webstack.cc/assets/images/webstack_banner_cn.png">
-    <meta property="og:site_name" content="WebStack - 收集国内外优秀设计网站、UI设计资源网站、灵感创意网站、Resources网站，定时更新分享优质产品设计书签。www.webstack.cc">
-    <!-- / Twitter Cards -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="WebStack - 收集国内外优秀设计网站、UI设计资源网站、灵感创意网站、Resources网站，定时更新分享优质产品设计书签。www.webstack.cc">
-    <meta name="twitter:description" content="UI设计,UI设计素材,设计导航,网址导航,设计资源,创意导航,创意网站导航,设计师网址大全,设计素材大全,设计师导航,UI设计资源,优秀UI设计欣赏,设计师导航,设计师网址大全,设计师网址导航,产品经理网址导航,UX师网址导航,www.webstack.cc">
-    <meta name="twitter:image" content="http://www.webstack.cc/assets/images/webstack_banner_cn.png">
-</head>
+    <title>DataTurbo</title>
+    <link rel="shortcut icon" href="./assets/images/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="./assets/css/fonts/linecons/css/linecons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/css/fonts/fontawesome/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="./assets/css/xenon-core.css" />
+    <link rel="stylesheet" href="./assets/css/xenon-components.css" />
+    <link rel="stylesheet" href="./assets/css/xenon-skins.css" />
+    <link rel="stylesheet" href="./assets/css/nav.css" />
+    <script src="./assets/js/jquery-1.11.1.min.js"></script>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
 
-<body>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111463289-1"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
+  <body class="page-body">
+    <!-- skin-white -->
+    <div class="page-container">
+      <div class="sidebar-menu toggle-others fixed">
+        <div class="sidebar-menu-inner">
+          <header class="logo-env">
+            <!-- logo -->
+            <div class="logo">
+              <a href="index.html" class="logo-expanded">
+                <svg
+                  width="100%"
+                  height="40px"
+                  viewBox="0 0 209 55"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  version="1.1"
+                >
+                  <g id="logo__item--business">
+                    <g id="group">
+                      <defs>
+                        <text
+                          id="string"
+                          transform="matrix(1.0 0.0 0.0 1.0 58.83984375 14.74609375)"
+                          font-family="Helvetica, Helvetica"
+                          font-size="32"
+                          x="1.0"
+                          y="25.0"
+                          text-decoration="none"
+                        >
+                          DataTurbo
+                        </text>
+                      </defs>
+                      <use
+                        id="DataTurbo"
+                        xlink:href="#string"
+                        fill="#999999"
+                        fill-opacity="1"
+                        stroke="none"
+                      />
+                    </g>
+                  </g>
+                  <g id="logo__item--logo_0">
+                    <g id="group-1">
+                      <g id="group-2">
+                        <path
+                          id="path-0"
+                          d="M17.978 0.011 L10.289 0.011 C4.689 0.011 0.2 4.544 0.2 10.1 L0.2 19.878 C0.689 17.744 1.4 15.7 2.422 13.7 5.667 7.3 11.311 2.411 17.978 0.011 Z"
+                          fill="#999999"
+                          fill-opacity="1"
+                          stroke="none"
+                        />
+                        <path
+                          id="path-1"
+                          d="M26.778 20.678 C23.622 20.678 21.044 23.255 21.044 26.411 21.044 29.566 23.622 32.144 26.778 32.144 29.933 32.144 32.511 29.566 32.511 26.411 32.511 23.255 29.933 20.678 26.778 20.678 Z M25.355 24.322 C25.355 24.322 25.311 24.366 25.311 24.366 25.311 24.366 25.267 24.411 25.267 24.411 25.311 24.366 25.311 24.366 25.355 24.322 Z"
+                          fill="#999999"
+                          fill-opacity="1"
+                          stroke="none"
+                        />
+                        <path
+                          id="path-2"
+                          d="M44.111 0.011 L36.333 0.011 35.755 1.656 C27.133 -1.278 17.356 0.589 10.422 6.5 3.311 12.633 -0.022 22.278 1.845 31.478 3.533 39.744 9.311 46.855 17.089 50.189 25.8 53.922 36.289 52.544 43.667 46.544 43.889 46.366 44.111 46.144 44.333 45.966 44.333 45.877 44.289 45.744 44.289 45.655 44.289 44.722 45.044 44.011 45.933 44.011 46.866 44.011 47.578 44.766 47.578 45.655 47.578 46.589 46.822 47.3 45.933 47.3 45.844 47.3 45.755 47.3 45.666 47.255 41.355 51.033 35.889 53.389 30.244 53.966 L44.111 53.966 C49.711 53.966 54.2 49.433 54.2 43.877 L54.2 10.1 C54.244 4.5 49.711 0.011 44.111 0.011 Z M18.289 47.833 C11.889 45.122 6.911 39.611 4.911 32.944 1.889 22.633 6.511 11.255 15.8 5.967 L16.733 7.611 C10.467 11.167 6.333 17.833 5.933 24.989 5.533 32.1 8.778 39.122 14.467 43.389 18.689 46.589 24.067 48.1 29.355 47.611 34.378 47.166 39 44.9 42.555 41.433 L43.889 42.766 C37.133 49.389 27.044 51.477 18.289 47.833 Z M44.244 35.789 C44.422 36.055 44.511 36.366 44.511 36.678 44.511 37.611 43.755 38.322 42.867 38.322 41.933 38.322 41.222 37.566 41.222 36.678 41.222 35.744 41.978 35.033 42.867 35.033 L43.089 35.033 C46.733 28.366 45.889 19.7 40.511 13.967 37.133 10.367 32.422 8.411 27.667 8.367 27.444 9.078 26.822 9.567 26.067 9.567 25.4 9.567 24.822 9.167 24.555 8.589 22.644 8.9 20.778 9.478 19.044 10.411 11.133 14.589 7.4 24.322 10.6 32.722 13.756 41.077 22.911 45.966 31.622 43.877 34.867 43.077 37.8 41.433 40.155 39.078 L41.133 40.055 C34.422 46.633 23.8 47.611 16.156 42.144 8.6 36.722 5.889 26.5 9.756 18.189 12.511 12.189 18.2 8.144 24.511 7.167 24.778 6.589 25.355 6.233 26.022 6.233 26.6 6.233 27.089 6.5 27.4 6.944 28.822 6.944 30.289 7.078 31.711 7.433 39.178 9.122 45.044 15.255 46.466 22.811 47.222 27.211 46.422 31.878 44.244 35.789 Z M12.689 18.322 C12.689 17.389 13.444 16.678 14.333 16.678 15.222 16.678 15.978 17.433 15.978 18.322 15.978 19.255 15.222 19.967 14.333 19.967 11.267 26.278 13.356 34.233 19.267 38.189 24.956 42.011 32.689 41.166 37.533 36.366 L38.511 37.344 C33.133 42.677 24.467 43.522 18.2 39.122 11.933 34.722 9.8 26.189 13.044 19.344 12.867 19.167 12.689 18.767 12.689 18.322 Z M38.466 29.255 L37.133 28.9 C38.289 24.722 36.511 20.144 32.867 17.789 29.178 15.389 24.244 15.7 20.867 18.5 17.4 21.389 16.244 26.366 18.111 30.5 19.844 34.233 23.755 36.633 27.889 36.411 29.889 36.322 31.755 35.611 33.355 34.455 33.222 34.233 33.178 33.966 33.178 33.7 33.178 32.766 33.933 32.055 34.822 32.055 35.755 32.055 36.467 32.811 36.467 33.7 36.467 34.633 35.711 35.344 34.822 35.344 34.689 35.344 34.6 35.344 34.467 35.3 29.222 39.344 21.267 38.233 17.622 32.5 15.178 28.678 15.267 23.566 17.8 19.833 20.2 16.322 24.511 14.367 28.733 14.9 35.578 15.7 40.289 22.589 38.466 29.255 Z M33.844 26.411 C33.844 30.322 30.689 33.478 26.778 33.478 22.867 33.478 19.711 30.322 19.711 26.411 19.667 22.5 22.867 19.344 26.778 19.344 30.644 19.344 33.844 22.5 33.844 26.411 Z"
+                          fill="#999999"
+                          fill-opacity="1"
+                          stroke="none"
+                        />
+                        <path
+                          id="path-3"
+                          d="M3.711 41.122 C2.067 38.5 0.911 35.655 0.2 32.678 L0.2 43.922 C0.2 49.522 4.733 54.011 10.289 54.011 L24.244 54.011 C15.844 53.077 8.2 48.233 3.711 41.122 Z"
+                          fill="#999999"
+                          fill-opacity="1"
+                          stroke="none"
+                        />
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </a>
+              <a href="index.html" class="logo-collapsed">
+                <svg
+                  width="40px"
+                  height="40px"
+                  viewBox="0 0 120 121"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  version="1.1"
+                >
+                  <g id="logo__item--logo_0">
+                    <g id="group-1">
+                      <g id="group-2">
+                        <path
+                          id="path-0"
+                          d="M39.506 0.247 L22.42 0.247 C9.975 0.247 0 10.321 0 22.666 L0 44.395 C1.086 39.654 2.667 35.111 4.938 30.666 12.148 16.444 24.691 5.58 39.506 0.247 Z"
+                          fill="#999999"
+                          fill-opacity="1"
+                          stroke="none"
+                        />
+                        <path
+                          id="path-1"
+                          d="M59.061 46.172 C52.049 46.172 46.321 51.901 46.321 58.913 46.321 65.925 52.049 71.654 59.061 71.654 66.074 71.654 71.802 65.925 71.802 58.913 71.802 51.901 66.074 46.172 59.061 46.172 Z M55.901 54.271 C55.901 54.271 55.802 54.37 55.802 54.37 55.802 54.37 55.703 54.469 55.703 54.469 55.802 54.37 55.802 54.37 55.901 54.271 Z"
+                          fill="#999999"
+                          fill-opacity="1"
+                          stroke="none"
+                        />
+                        <path
+                          id="path-2"
+                          d="M97.58 0.247 L80.296 0.247 79.012 3.901 C59.852 -2.617 38.123 1.531 22.716 14.667 6.914 28.296 -0.494 49.728 3.654 70.172 7.407 88.543 20.247 104.345 37.531 111.752 56.889 120.049 80.197 116.987 96.592 103.654 97.086 103.259 97.58 102.765 98.073 102.37 98.073 102.172 97.975 101.876 97.975 101.678 97.975 99.604 99.654 98.024 101.629 98.024 103.703 98.024 105.283 99.703 105.283 101.678 105.283 103.752 103.604 105.333 101.629 105.333 101.432 105.333 101.234 105.333 101.036 105.234 91.456 113.629 79.308 118.863 66.765 120.147 L97.58 120.147 C110.024 120.147 119.999 110.073 119.999 97.728 L119.999 22.666 C120.098 10.222 110.024 0.247 97.58 0.247 Z M40.197 106.518 C25.975 100.493 14.914 88.246 10.469 73.432 3.753 50.518 14.025 25.234 34.667 13.481 L36.741 17.136 C22.815 25.037 13.63 39.852 12.741 55.753 11.852 71.555 19.062 87.16 31.704 96.641 41.086 103.752 53.037 107.11 64.79 106.024 75.95 105.036 86.222 99.999 94.123 92.296 L97.086 95.259 C82.074 109.975 59.654 114.617 40.197 106.518 Z M97.876 79.753 C98.271 80.345 98.469 81.036 98.469 81.728 98.469 83.802 96.79 85.382 94.814 85.382 92.74 85.382 91.16 83.703 91.16 81.728 91.16 79.654 92.839 78.074 94.814 78.074 L95.308 78.074 C103.407 63.259 101.53 44 89.58 31.259 82.074 23.259 71.605 18.913 61.037 18.815 60.543 20.395 59.16 21.481 57.481 21.481 56 21.481 54.716 20.592 54.123 19.308 49.876 20 45.728 21.284 41.876 23.358 24.296 32.642 16 54.271 23.111 72.938 30.123 91.506 50.469 102.37 69.827 97.728 77.037 95.95 83.555 92.296 88.79 87.061 L90.962 89.234 C76.049 103.851 52.444 106.024 35.457 93.876 18.667 81.827 12.642 59.111 21.234 40.642 27.358 27.308 40 18.321 54.024 16.148 54.617 14.864 55.901 14.074 57.382 14.074 58.666 14.074 59.753 14.667 60.444 15.654 63.605 15.654 66.864 15.95 70.024 16.741 86.617 20.494 99.654 34.123 102.814 50.913 104.493 60.691 102.715 71.061 97.876 79.753 Z M27.753 40.938 C27.753 38.864 29.432 37.284 31.407 37.284 33.383 37.284 35.062 38.963 35.062 40.938 35.062 43.012 33.383 44.592 31.407 44.592 24.592 58.617 29.234 76.296 42.37 85.086 55.012 93.58 72.197 91.703 82.962 81.036 L85.135 83.209 C73.185 95.061 53.926 96.938 40 87.16 26.074 77.382 21.333 58.419 28.543 43.21 28.148 42.814 27.753 41.926 27.753 40.938 Z M85.037 65.234 L82.074 64.444 C84.641 55.16 80.691 44.987 72.592 39.753 64.395 34.419 53.432 35.111 45.926 41.333 38.222 47.753 35.654 58.814 39.802 68 43.654 76.296 52.345 81.629 61.531 81.135 65.975 80.938 70.123 79.357 73.679 76.79 73.382 76.296 73.284 75.703 73.284 75.111 73.284 73.037 74.963 71.456 76.938 71.456 79.012 71.456 80.592 73.135 80.592 75.111 80.592 77.185 78.913 78.765 76.938 78.765 76.642 78.765 76.444 78.765 76.148 78.666 64.493 87.654 46.815 85.185 38.716 72.444 33.284 63.95 33.481 52.592 39.111 44.296 44.444 36.494 54.024 32.148 63.407 33.333 78.617 35.111 89.086 50.419 85.037 65.234 Z M74.765 58.913 C74.765 67.604 67.753 74.617 59.061 74.617 50.37 74.617 43.358 67.604 43.358 58.913 43.259 50.222 50.37 43.21 59.061 43.21 67.654 43.21 74.765 50.222 74.765 58.913 Z"
+                          fill="#999999"
+                          fill-opacity="1"
+                          stroke="none"
+                        />
+                        <path
+                          id="path-3"
+                          d="M7.802 91.604 C4.148 85.777 1.58 79.456 0 72.839 L0 97.827 C0 110.271 10.074 120.246 22.42 120.246 L53.432 120.246 C34.765 118.172 17.778 107.407 7.802 91.604 Z"
+                          fill="#999999"
+                          fill-opacity="1"
+                          stroke="none"
+                        />
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </a>
+            </div>
+            <div class="mobile-menu-toggle visible-xs">
+              <a href="#" data-toggle="user-info-menu">
+                <i class="linecons-cog"></i>
+              </a>
+              <a href="#" data-toggle="mobile-menu">
+                <i class="fa-bars"></i>
+              </a>
+            </div>
+          </header>
+          <ul id="main-menu" class="main-menu">
+            <li>
+              <a href="#常用推荐" class="smooth">
+                <i class="linecons-star"></i>
+                <span class="title">常用推荐</span>
+              </a>
+            </li>
+            <li>
+              <a href="#社区资讯" class="smooth">
+                <i class="linecons-doc"></i>
+                <span class="title">社区资讯</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-content">
+        <nav class="navbar user-info-navbar" role="navigation">
+          <!-- User Info, Notifications and Menu Bar -->
+          <!-- Left links for user info navbar -->
+          <ul class="user-info-menu left-links list-inline list-unstyled">
+            <li class="hidden-sm hidden-xs">
+              <a href="#" data-toggle="sidebar">
+                <i class="fa-bars"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- 常用推荐 -->
+        <h4 class="text-gray">
+          <i class="linecons-tag" style="margin-right: 7px" id="常用推荐"></i
+          >常用推荐
+        </h4>
+        <div class="row">
+          <div class="col-sm-3">
+            <div
+              class="xe-widget xe-conversations box2 label-info"
+              onclick="window.open('https://www.pinterest.com/', '_blank')"
+              data-toggle="tooltip"
+              data-placement="bottom"
+              title=""
+              data-original-title="https://www.pinterest.com/"
+            >
+              <div class="xe-comment-entry">
+                <a class="xe-user-img">
+                  <img
+                    data-src="./assets/images/logos/pinterest.png"
+                    class="lozad img-circle"
+                    width="40"
+                  />
+                </a>
+                <span
+                  class="label label-info"
+                  data-toggle="tooltip"
+                  data-placement="left"
+                  title=""
+                  data-original-title="Hello I am a Tooltip"
+                ></span>
+                <div class="xe-comment">
+                  <a href="#" class="xe-user-name overflowClip_1">
+                    <strong>Pinterest</strong>
+                  </a>
+                  <p class="overflowClip_2">全球美图收藏采集站</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div
+              class="xe-widget xe-conversations box2 label-info"
+              onclick="window.open('http://huaban.com/', '_blank')"
+              data-toggle="tooltip"
+              data-placement="bottom"
+              title=""
+              data-original-title="http://huaban.com/"
+            >
+              <div class="xe-comment-entry">
+                <a class="xe-user-img">
+                  <img
+                    data-src="./assets/images/logos/huaban.png"
+                    class="lozad img-circle"
+                    width="40"
+                  />
+                </a>
+                <span
+                  class="label label-info"
+                  data-toggle="tooltip"
+                  data-placement="left"
+                  title=""
+                  data-original-title="Hello I am a Tooltip"
+                ></span>
+                <div class="xe-comment">
+                  <a href="#" class="xe-user-name overflowClip_1">
+                    <strong>花瓣</strong>
+                  </a>
+                  <p class="overflowClip_2">收集灵感,保存有用的素材</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div
+              class="xe-widget xe-conversations box2 label-info"
+              onclick="window.open('https://medium.com/', '_blank')"
+              data-toggle="tooltip"
+              data-placement="bottom"
+              title=""
+              data-original-title="https://medium.com/"
+            >
+              <div class="xe-comment-entry">
+                <a class="xe-user-img">
+                  <img
+                    data-src="./assets/images/logos/medium.png"
+                    class="lozad img-circle"
+                    width="40"
+                  />
+                </a>
+                <span
+                  class="label label-info"
+                  data-toggle="tooltip"
+                  data-placement="left"
+                  title=""
+                  data-original-title="Hello I am a Tooltip"
+                ></span>
+                <div class="xe-comment">
+                  <a href="#" class="xe-user-name overflowClip_1">
+                    <strong>Medium</strong>
+                  </a>
+                  <p class="overflowClip_2">高质量设计文章</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div
+              class="xe-widget xe-conversations box2 label-info"
+              onclick="window.open('http://www.uisdc.com/', '_blank')"
+              data-toggle="tooltip"
+              data-placement="bottom"
+              title=""
+              data-original-title="http://www.uisdc.com/"
+            >
+              <div class="xe-comment-entry">
+                <a class="xe-user-img">
+                  <img
+                    data-src="./assets/images/logos/uisdc.png"
+                    class="lozad img-circle"
+                    width="40"
+                  />
+                </a>
+                <span
+                  class="label label-info"
+                  data-toggle="tooltip"
+                  data-placement="left"
+                  title=""
+                  data-original-title="Hello I am a Tooltip"
+                ></span>
+                <div class="xe-comment">
+                  <a href="#" class="xe-user-name overflowClip_1">
+                    <strong>优设</strong>
+                  </a>
+                  <p class="overflowClip_2">设计师交流学习平台</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3">
+            <div
+              class="xe-widget xe-conversations box2 label-info"
+              onclick="window.open('https://www.producthunt.com/', '_blank')"
+              data-toggle="tooltip"
+              data-placement="bottom"
+              title=""
+              data-original-title="https://www.producthunt.com/"
+            >
+              <div class="xe-comment-entry">
+                <a class="xe-user-img">
+                  <img
+                    data-src="./assets/images/logos/producthunt.png"
+                    class="lozad img-circle"
+                    width="40"
+                  />
+                </a>
+                <span
+                  class="label label-info"
+                  data-toggle="tooltip"
+                  data-placement="left"
+                  title=""
+                  data-original-title="Hello I am a Tooltip"
+                ></span>
+                <div class="xe-comment">
+                  <a href="#" class="xe-user-name overflowClip_1">
+                    <strong>Producthunt</strong>
+                  </a>
+                  <p class="overflowClip_2">发现新鲜有趣的产品</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div
+              class="xe-widget xe-conversations box2 label-info"
+              onclick="window.open('https://www.youtube.com/', '_blank')"
+              data-toggle="tooltip"
+              data-placement="bottom"
+              title=""
+              data-original-title="https://www.youtube.com/"
+            >
+              <div class="xe-comment-entry">
+                <a class="xe-user-img">
+                  <img
+                    data-src="./assets/images/logos/youtube.png"
+                    class="lozad img-circle"
+                    width="40"
+                  />
+                </a>
+                <span
+                  class="label label-info"
+                  data-toggle="tooltip"
+                  data-placement="left"
+                  title=""
+                  data-original-title="Hello I am a Tooltip"
+                ></span>
+                <div class="xe-comment">
+                  <a href="#" class="xe-user-name overflowClip_1">
+                    <strong>Youtube</strong>
+                  </a>
+                  <p class="overflowClip_2">全球最大的学习分享平台</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div
+              class="xe-widget xe-conversations box2 label-info"
+              onclick="window.open('https://www.google.com/', '_blank')"
+              data-toggle="tooltip"
+              data-placement="bottom"
+              title=""
+              data-original-title="https://www.google.com/"
+            >
+              <div class="xe-comment-entry">
+                <a class="xe-user-img">
+                  <img
+                    data-src="./assets/images/logos/google.png"
+                    class="lozad img-circle"
+                    width="40"
+                  />
+                </a>
+                <span
+                  class="label label-info"
+                  data-toggle="tooltip"
+                  data-placement="left"
+                  title=""
+                  data-original-title="Hello I am a Tooltip"
+                ></span>
+                <div class="xe-comment">
+                  <a href="#" class="xe-user-name overflowClip_1">
+                    <strong>Google</strong>
+                  </a>
+                  <p class="overflowClip_2">全球最大的UI学习分享平台</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br />
+        <!-- END 常用推荐 -->
+        <!-- 社区资讯 -->
+        <h4 class="text-gray">
+          <i class="linecons-tag" style="margin-right: 7px" id="社区资讯"></i
+          >社区资讯
+        </h4>
+        <div class="row">
+          <div class="col-sm-3">
+            <div
+              class="xe-widget xe-conversations box2 label-info"
+              onclick="window.open('https://www.leiphone.com/', '_blank')"
+              data-toggle="tooltip"
+              data-placement="bottom"
+              title=""
+              data-original-title="https://www.leiphone.com/"
+            >
+              <div class="xe-comment-entry">
+                <a class="xe-user-img">
+                  <img
+                    data-src="./assets/images/logos/leiphone.png"
+                    class="lozad img-circle"
+                    width="40"
+                  />
+                </a>
+                <div class="xe-comment">
+                  <a href="#" class="xe-user-name overflowClip_1">
+                    <strong>雷锋网</strong>
+                  </a>
+                  <p class="overflowClip_2">
+                    人工智能和智能硬件领域的互联网科技媒体
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div
+              class="xe-widget xe-conversations box2 label-info"
+              onclick="window.open('http://36kr.com/', '_blank')"
+              data-toggle="tooltip"
+              data-placement="bottom"
+              title=""
+              data-original-title="http://36kr.com/"
+            >
+              <div class="xe-comment-entry">
+                <a class="xe-user-img">
+                  <img
+                    data-src="./assets/images/logos/36kr.png"
+                    class="lozad img-circle"
+                    width="40"
+                  />
+                </a>
+                <div class="xe-comment">
+                  <a href="#" class="xe-user-name overflowClip_1">
+                    <strong>36kr</strong>
+                  </a>
+                  <p class="overflowClip_2">创业资讯、科技新闻</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br />
+        <!--END 社区资讯 -->
+        <!-- Main Footer -->
+        <!-- Choose between footer styles: "footer-type-1" or "footer-type-2" -->
+        <!-- Add class "sticky" to  always stick the footer to the end of page (if page contents is small) -->
+        <!-- Or class "fixed" to  always fix the footer to the end of page -->
+        <footer class="main-footer sticky footer-type-1">
+          <div class="footer-inner">
+            <!-- Add your copyright text here -->
+            <div class="footer-text">&copy; 2021-2022 DataTurbo</div>
+            <br>
+            <div class="footer-text"><a href="https://beian.miit.gov.cn/" target="_blank">沪ICP备2021035216号-1</a></div>
+            <!-- Go to Top Link, just add rel="go-top" to any link to add this functionality -->
+            <div class="go-up">
+              <a href="#" rel="go-top">
+                <i class="fa-angle-up"></i>
+              </a>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <!-- 锚点平滑移动 -->
+    <script type="text/javascript">
+      $(document).ready(function () {
+        //img lazy loaded
+        const observer = lozad();
+        observer.observe();
 
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
+        $(document).on("click", ".has-sub", function () {
+          var _this = $(this);
+          if (!$(this).hasClass("expanded")) {
+            setTimeout(function () {
+              _this.find("ul").attr("style", "");
+            }, 300);
+          } else {
+            $(".has-sub ul").each(function (id, ele) {
+              var _that = $(this);
+              if (_this.find("ul")[0] != ele) {
+                setTimeout(function () {
+                  _that.attr("style", "");
+                }, 300);
+              }
+            });
+          }
+        });
+        $(".user-info-menu .hidden-sm").click(function () {
+          if ($(".sidebar-menu").hasClass("collapsed")) {
+            $(".has-sub.expanded > ul").attr("style", "");
+          } else {
+            $(".has-sub.expanded > ul").show();
+          }
+        });
+        $("#main-menu li ul li").click(function () {
+          $(this).siblings("li").removeClass("active"); // 删除其他兄弟元素的样式
+          $(this).addClass("active"); // 添加当前元素的样式
+        });
+        $("a.smooth").click(function (ev) {
+          ev.preventDefault();
 
-    gtag('config', 'UA-111463289-1');
+          public_vars.$mainMenu
+            .add(public_vars.$sidebarProfile)
+            .toggleClass("mobile-is-visible");
+          ps_destroy();
+          $("html, body").animate(
+            {
+              scrollTop: $($(this).attr("href")).offset().top - 30,
+            },
+            {
+              duration: 500,
+              easing: "swing",
+            }
+          );
+        });
+        return false;
+      });
+
+      var href = "";
+      var pos = 0;
+      $("a.smooth").click(function (e) {
+        $("#main-menu li").each(function () {
+          $(this).removeClass("active");
+        });
+        $(this).parent("li").addClass("active");
+        e.preventDefault();
+        href = $(this).attr("href");
+        pos = $(href).position().top - 30;
+      });
     </script>
-</body>
-
+    <!-- Bottom Scripts -->
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/TweenMax.min.js"></script>
+    <script src="./assets/js/resizeable.js"></script>
+    <script src="./assets/js/joinable.js"></script>
+    <script src="./assets/js/xenon-api.js"></script>
+    <script src="./assets/js/xenon-toggles.js"></script>
+    <!-- JavaScripts initializations and stuff -->
+    <script src="./assets/js/xenon-custom.js"></script>
+    <script src="./assets/js/lozad.js"></script>
+  </body>
 </html>
